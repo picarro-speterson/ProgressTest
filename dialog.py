@@ -7,7 +7,6 @@ class _Dialog:
     # Opens progress dialog as its own window
     def openProgressDialog(self, text, cancelText, minimum, maximum):
         self.dialog = QtGui.QProgressDialog(text, cancelText, minimum, maximum)
-        self.dialog.setWindowModality(QtCore.Qt.WindowModal)
         self.dialog.setWindowTitle("Progress")
         self.dialogVal = 0
         self.dialog.setValue(self.dialogVal)
